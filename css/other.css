@@ -1,0 +1,33 @@
+.other-body{
+    margin: 100px 15em 10em;
+}
+.other-body p{
+    font-size: 30px;
+    text-align: center;
+    margin: 7em;
+}
+.other-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15em;
+}
+.other-body .other-box .other-select{
+    display: flex;
+}
+.other-body .other-box .other-select a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #859431;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom,#a4b833, #d7e937);
+    width: 250px;
+    height: 100px;
+    transition: transform 0.5s ease;
+}
+.other-body .other-box .other-select a:hover{
+    transform: scale(1.1);
+}
