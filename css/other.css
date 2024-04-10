@@ -1,33 +1,82 @@
-.other-body{
-    margin: 100px 15em 10em;
-}
-.other-body p{
-    font-size: 30px;
-    text-align: center;
-    margin: 7em;
-}
-.other-box{
+.about-text{
+    margin: 100px 15em 20em 18em;
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 15em;
+    flex-direction: column;
 }
-.other-body .other-box .other-select{
+.about-text p{
+    font-size: 25px;
     display: flex;
 }
-.other-body .other-box .other-select a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 30px;
+.about-block{
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid #859431;
-    border-radius: 10px;
-    background-image: linear-gradient(to bottom,#a4b833, #d7e937);
-    width: 250px;
-    height: 100px;
-    transition: transform 0.5s ease;
+    margin-bottom: 20em;
+    gap: 10em;
 }
-.other-body .other-box .other-select a:hover{
-    transform: scale(1.1);
+.about-img{
+    margin: 0 50px;
+}
+.about-block .about-img img{
+    width: 500px;
+    height: 350px;
+}
+.about-block:first-child{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5em;
+    margin-bottom: 20em;
+    gap: 10em;
+    align-items: center;
+}
+.about-block:last-child{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    gap: 10em;
+    align-items: center;
+}
+/*----------------------------------*/
+
+.my-skills-text{
+    margin: 0px 15em 0px 18em;
+    display: flex;
+    flex-direction: column;
+}
+.my-skills-text ul{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.my-skills-block{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15em;
+    gap: 20em;
+}
+.my-skills-img{
+    margin: 0 50px;
+}
+.my-skills-block .my-skills-img img{
+    width: 500px;
+    height: 350px;
+}
+.checked{
+    color: orange;
+}
+.my-skills-block ul{
+    display: flex;
+    padding-left: 6em;
+}
+.my-skills-block ul li{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.my-skills-block ul li .main{
+    display: flex;
+    
+}
+.my-skills-new-text{
+    font-size: 25px;
+    display: flex;
 }
