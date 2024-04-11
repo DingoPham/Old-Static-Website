@@ -104,3 +104,151 @@ body{
     font-size: 30px;
     margin: 0;
 }
+.about-text{
+    margin: 100px 15em 20em 18em;
+    display: flex;
+    flex-direction: column;
+}
+.about-text p{
+    font-size: 25px;
+    display: flex;
+}
+.about-block{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20em;
+    gap: 10em;
+}
+.about-img{
+    margin: 0 50px;
+}
+.about-block .about-img img{
+    width: 500px;
+    height: 350px;
+}
+.about-block:first-child{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5em;
+    margin-bottom: 20em;
+    gap: 10em;
+    align-items: center;
+}
+.about-block:last-child{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    gap: 10em;
+    align-items: center;
+}
+/*----------------------------------*/
+.my-skills-text{
+    margin: 0px 15em 0px 18em;
+    display: flex;
+    flex-direction: column;
+}
+.my-skills-text ul{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.my-skills-block{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 15em;
+    gap: 15em;
+}
+.my-skills-img{
+    margin: 0 50px;
+}
+.my-skills-block .my-skills-img img{
+    width: 500px;
+    height: 350px;
+}
+.checked{
+    color: orange;
+}
+.my-skills-block ul{
+    display: flex;
+}
+.my-skills-block ul li{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.my-skills-block ul li .main{
+    display: flex;
+    
+}
+.my-skills-new-text{
+    font-size: 25px;
+    display: flex;
+}
+#toTopBtn{
+    display: none;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    z-index: 100;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    width: 4em;
+    background-color: #2c3a0c;
+}
+.btn-check{
+    color: white;
+}
+/*----------------------------------*/
+.other-things-text{
+    margin: 10em 15em 21em 18em;
+    display: flex;
+    flex-direction: column;
+}
+.other-things-text p{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.other-things-text p:last-child{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0;
+}
+.other-things-block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.selection-container{
+    display: flex;
+    gap: 20px;
+}
+.selection-container a img{
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s ease;
+}
+.selection-container a img:hover{
+    transform: scale(1.3);
+}
+.other-website{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #a4b833;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #44b44d;
+    width: 200px;
+    height: 50px;
+    transition: transform 0.5s ease;
+}
+.other-website:hover{
+    transform: scale(1.3);
+}
