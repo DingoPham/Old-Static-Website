@@ -16,7 +16,7 @@ document.querySelectorAll('#nav a').forEach(anchor =>{
 
         const href = this.getAttribute('href')
 
-        if(href === '../html/Index.html'){
+        if(href === './index.html'){
             window.location.href = href;
             return;
         }
