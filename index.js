@@ -54,7 +54,6 @@ contentApper.forEach(animation => {
 
 // Footer animation
 const leftContentApper = document.querySelector('.left-animated-content');
-
 const newObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -82,7 +81,23 @@ window.addEventListener("scroll", function(){
     }
 });
 
-// Navber for moblie button
-function navbarButton(x){
-    x.classList.toggle("change");
-}
+// Navbar for moblie button
+// function navbarButton(x){
+//     x.classList.toggle("change");
+// }
+
+// Hidden navbar for mobile
+const hiddenNavBtn = document.getElementById("navbar-button");
+const overlay = document.getElementById("overlay");
+
+hiddenNavBtn.addEventListener("click", function(){
+    if(overlay.style.display === "block"){
+        overlay.style.display = "none";
+    }else{
+        overlay.style.display = "block";
+    }
+});
+
+overlay.addEventListener("click", function(){
+    overlay.style.display = "none";
+});

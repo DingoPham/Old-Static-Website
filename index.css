@@ -1,23 +1,4 @@
 @media only screen and (min-width: 769px) {
-    .animated-content {
-        opacity: 0;
-        transform: translateY(100px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .animated-content.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-    .left-animated-content{
-        opacity: 0;
-        transform: translateX(-100px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .left-animated-content.show {
-        opacity: 1;
-        transform: translateX(0);
-    }
     /*-----------------------------*/
     body{
         width: 100%;
@@ -94,25 +75,6 @@
         flex-direction: column;
     }
     /*-----------------------------*/
-    .footer{
-        width: 100%;
-        height: 400px;
-        margin: 0;
-        background-color: #44b44d;
-        color: #fff;
-        display: flex;
-    }
-    .left-footer{
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 14em;
-    }
-    .gmail{
-        font-size: 30px;
-        margin: 0;
-    }
     .about-text{
         margin: 100px 15em 20em 18em;
         display: flex;
@@ -166,7 +128,7 @@
         align-items: center;
         justify-content: flex-end;
         margin-bottom: 15em;
-        gap: 15em;
+        gap: 20em;
     }
     .my-skills-img{
         margin: 0 50px;
@@ -247,6 +209,27 @@
     .other-website:hover{
         transform: scale(1.3);
     }
+    /*----------------------------------*/
+    .footer{
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        background-color: #44b44d;
+        color: #fff;
+        display: flex;
+    }
+    .left-footer{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 14em;
+    }
+    .gmail{
+        font-size: 30px;
+        margin: 0;
+    }
+    /*----------------------------------*/
     #toTopBtn{
         display: none;
         position: fixed;
@@ -277,5 +260,22 @@
             opacity: 1;
         }
     }
-    
+    .animated-content {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .animated-content.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .left-animated-content{
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .left-animated-content.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
