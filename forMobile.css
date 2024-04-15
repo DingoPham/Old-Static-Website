@@ -1,0 +1,66 @@
+@media only screen and (max-width: 768px) {
+    .animated-content {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .animated-content.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .left-animated-content{
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .left-animated-content.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    /*-----------------------------*/
+    body{
+        width: 100%;
+        font-family: "Quicksand", cursive;
+        margin: 0;
+        background-color: #fff;
+    }
+    /*-----------------------------*/
+    .header-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: #44b44d;
+        font-size: 30px;
+        width: 100%;
+        transition: top 0.3s ease;
+    }
+    .header-selection{
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+    }
+    .header-selection a{
+        text-decoration: none;
+        transition: color 0.5s ease;
+        position: relative;
+        color: #fff;
+    }
+    .bg-img{
+        background-image: url(./img/skyBG.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        margin-top: 70px;
+        margin-bottom: 10em;
+    }
+    .hidden-navbar{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    /*-----------------------------*/
+}

@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <title>Home</title>
         <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./forMobile.css">
     </head>
     <body>
         <div class="header-bar" id="nav">
@@ -31,26 +32,26 @@
         <div class="bg-img"></div>
         <div class="body">
             <div class="about-text" >
-                <div class="about-block" id="aboutMe">
+                <div class="about-block animated-content" id="aboutMe">
                     <p>My name is Dingo, I'm so glad you came here and discovered the wonders of my website. My hobbies are programming, 2D painting. I've planned a lot of things since I started learning programming, and the first thing you see is this website which is also my first achievement!</p>
                     <div class="about-img">
                         <img src="./img/catYes.gif">
                     </div>
                 </div>
-                <div class="about-block" id="thisWebsite">
+                <div class="about-block animated-content" id="thisWebsite">
                     <p>This website is basically just a personal website, not a commercial website or any other kind like an e-commerce website.</p>
                     <div class="about-img">
                         <img src="./img/catNo.gif">
                     </div>
                 </div>
-                <div class="about-block" id="desire">
+                <div class="about-block animated-content" id="desire">
                     <p>In the future, maybe I will have more projects for myself or maybe with a group. But no matter what, I really want to make the most of what I have to achieve it.</p>
                     <div class="about-img">
                         <img src="./img/catYawn.gif">
                     </div>
                 </div>
             </div>
-            <div class="my-skills-text" id="mySkills">
+            <div class="my-skills-text animated-content" id="mySkills">
                 <div class="my-skills-block">
                     <ul>-My own assessment-
                         <li>HTML/CSS:
@@ -115,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="other-things-text" id="otherThings">
+            <div class="other-things-text animated-content" id="otherThings">
                 <div class="other-things-block">
                     <p>-If you are interested, please join me via social networks below-</p>
                     <div class="selection-container">
@@ -140,7 +141,7 @@
             </div>
         </div>
         <div class="footer">
-            <div class="left-footer">
+            <div class="left-footer left-animated-content">
                 <p>If you have any questions, write to me via my gmail:</p>
                 <p class="gmail">pencibambo@gmail.com</p>
             </div>
@@ -148,6 +149,7 @@
         <button onclick="scrollToTop()" id="toTopBtn">
             <i class="fas fa-caret-up btn-check" style="font-size: 30px;"></i>
         </button>
+        <div class="hidden-navbar"></div>
         <script src="./index.js"></script>
     </body>
 </html>

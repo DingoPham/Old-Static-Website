@@ -1,3 +1,4 @@
+// Navbar animation
 var lastScroll = window.pageYOffset;
 window.onscroll = function(){
     var currentScroll = window.pageYOffset;
@@ -10,6 +11,7 @@ window.onscroll = function(){
     lastScroll = currentScroll;
 }
 
+// Navbar point to content head
 document.querySelectorAll('#nav a').forEach(anchor =>{
     anchor.addEventListener('click', function(e){
         e.preventDefault();
@@ -36,17 +38,46 @@ document.querySelectorAll('#nav a').forEach(anchor =>{
     });
 });
 
-function scrollFunction(){
-    if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300){
-        document.getElementById("toTopBtn").style.display = "block";
-    }else{
-        document.getElementById("toTopBtn").style.display = "none";
-    }
-}
+// Content animation
+const contentApper = document.querySelectorAll('.animated-content');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
 
+contentApper.forEach(animation => {
+    observer.observe(animation);
+});
+
+// Footer animation
+const leftContentApper = document.querySelector('.left-animated-content');
+
+const newObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            leftContentApper.classList.add('show');
+        }
+    });
+});
+
+newObserver.observe(leftContentApper);
+
+// Home page button
 function scrollToTop(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
-window.addEventListener('scroll', scrollFunction)
+window.addEventListener("scroll", function(){
+    var toTopBtn = document.querySelector("#toTopBtn");
+    if(window.pageYOffset > 1000 ){
+        toTopBtn.classList.add("show");
+    }else{
+        toTopBtn.classList.remove("show");
+    }
+});
