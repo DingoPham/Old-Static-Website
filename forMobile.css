@@ -18,12 +18,37 @@
         opacity: 1;
         transform: translateX(0);
     }
+    
     /*-----------------------------*/
     body{
         width: 100%;
         font-family: "Quicksand", cursive;
         margin: 0;
         background-color: #fff;
+    }
+    .mobile-selection{
+        display: block;
+    }
+    .hidden-navbar-button{
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        transform: translate(0, 9px) rotate(-45deg);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }  
+    .change .bar3 {
+        transform: translate(0, -9px) rotate(45deg);
     }
     /*-----------------------------*/
     .header-bar{
@@ -38,9 +63,10 @@
     }
     .header-selection{
         display: flex;
-        flex-direction: row;    
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        margin: 0 10px;
         height: 70px;
     }
     .header-selection a{
@@ -57,10 +83,161 @@
         margin-top: 70px;
         margin-bottom: 10em;
     }
-    .hidden-navbar{
-        width: 100%;
-        height: 100%;
-        background-color: #fff;
+    .selection{
+        display: none   ;
+    }
+    .other-things-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .other-things-text p{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .other-things-text p:last-child{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 3em 0;
+    }
+    .other-things-block{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 40px 10em;
+    }
+    .selection-container{
+        display: flex;
+        gap: 20px;
+    }
+    .selection-container a img{
+        width: 50px;
+        height: 50px;
+        transition: transform 0.5s ease;
+    }
+    .selection-container a img:hover{
+        transform: scale(1.3);
+    }
+    .other-website{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 1px solid #a4b833;
+        border-radius: 3px;
+        color: #fff;
+        background-color: #44b44d;
+        width: 200px;
+        height: 50px;
+        transition: transform 0.5s ease;
+    }
+    .other-website:hover{
+        transform: scale(1.3);
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px;
+    }
+    .about-text p{
+        font-size: 20px;
+        display: flex;
+    }
+    .about-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10em;
+    }
+    .about-img{
+        margin: 0 50px;
+    }
+    .about-block .about-img img{
+        width: 300px;
+        height: 200px;
+    }
+    .my-skills-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 40px;
+    }
+    .my-skills-text ul{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .my-skills-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10em;
+    }
+    .checked{
+        color: orange;
+    }
+    .my-skills-block ul{
+        display: flex;
+    }
+    .my-skills-block ul li{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .my-skills-block ul li .main{
+        display: flex;
+    }
+    .my-skills-new-text{
+        font-size: 25px;
+        display: flex;
+    }
+    .my-skills-block .my-skills-img img{
+        width: 300px;
+        height: 200px;
     }
     /*-----------------------------*/
+    .footer{
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        background-color: #44b44d;
+        color: #fff;
+        display: flex;
+        text-align: center;
+    }
+    .left-footer{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .gmail{
+        font-size: 30px;
+        margin: 0;
+    }
+    /*-----------------------------*/
+    #toTopBtn{
+        display: none;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        z-index: 100;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 10px;
+        width: 4em;
+        background-color: #2c3a0c;
+        transition: transform 0.5s ease;
+    }
+    #toTopBtn:hover{
+        transform: scale(1.3);
+    }
+    #toTopBtn.show{
+        display: block;
+        animation: fadeIn 0.3s;
+    }
 }

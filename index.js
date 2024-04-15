@@ -81,3 +81,8 @@ window.addEventListener("scroll", function(){
         toTopBtn.classList.remove("show");
     }
 });
+
+// Navber for moblie button
+function navbarButton(x){
+    x.classList.toggle("change");
+}

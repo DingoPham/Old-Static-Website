@@ -26,6 +26,9 @@
         background-color: #fff;
     }
     /*-----------------------------*/
+    .mobile-selection{
+        display: none;
+    }
     .header-bar{
         position: fixed;
         top: 0;
