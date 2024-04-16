@@ -1,16 +1,108 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <title>Artwork</title>
-        <link rel="stylesheet" href="../css/Index.css">
-        <link rel="stylesheet" href="../css/Other.css">
+        <link rel="stylesheet" href="./forMobileArtwork.css">
+        <link rel="stylesheet" href="./forArtwork.css">
     </head>
     <body>
-        
+        <div class="header">
+            <div class="nav">
+                <div class="left-navbar">  
+                    <div class="sidebar" id="sidebar">
+                        <p>-Home-</p>
+                        <a href="https://www.youtube.com/channel/UCtH0_zKVeXOKO2hiqLoHSrg"> Follow my Youtube!
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                        <a href="https://buymeacoffee.com/dingopham763/membership"> Buy me a coffee!</a>
+                    </div>
+                    <div class="content" id="content">
+                        <div class="left-navbar-button" onclick="toggleNav()">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="home-page">
+                <a href="./index.html" class="home">
+                    DINGOPHAM
+                </a>
+            </div>
+        </div>
+        <div class="body">
+            <div class="img-container" id="pageContent">
+                <!-- new image put in here -->
+                <div class="img-place">
+                    <img src="./imgFAW/jobs.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/shave.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/birthday.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/broodMother.jpg">    
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/mySkyKid.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/skyGA2.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/skyGA1.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/skyTogether2.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/skyTogether1.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/hairCut.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/Gaffie.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/roadToRostok.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/commission.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/commission2.jpg">
+                </div>
+                <div class="img-place">
+                    <img src="./imgFAW/dingo.jpg">
+                </div>
+                <!-- old image put here -->
+            </div>
+            <div id="pageSwitch" class="page-switch">
+                <button onclick="showPreviousPage()">
+                    <i class='fas fa-less-than'></i>
+                </button>
+                <div class="page-number">
+                    <input id="pageNumberInput">
+                </div>
+                <button onclick="showNextPage()">
+                    <i class='fas fa-greater-than'></i>
+                </button>
+            </div>
+        </div>
+        <div class="footer">
+            <div></div>
+        </div>
+        <script src="./forArtwork.js"></script>
     </body>
 </html>

@@ -7,6 +7,7 @@ window.onscroll = function(){
         document.getElementById("nav").style.top = "0";
     }else{
         document.getElementById("nav").style.top = "-100px";
+        
     }
     lastScroll = currentScroll;
 }
@@ -80,11 +81,6 @@ window.addEventListener("scroll", function(){
         toTopBtn.classList.remove("show");
     }
 });
-
-// Navbar for moblie button
-// function navbarButton(x){
-//     x.classList.toggle("change");
-// }
 
 // Hidden navbar for mobile
 const hiddenNavBtn = document.getElementById("navbar-button");
