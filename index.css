@@ -27,11 +27,16 @@
         align-items: center;
         height: 70px;
     }
-    .header-selection a{
-        text-decoration: none;
-        transition: color 0.5s ease;
+    .selection{
+        display: flex;
+        gap: 50px;
+        font-weight: 600;
+    }
+    .selection a{
         position: relative;
         color: #fff;
+        text-decoration: none;
+        transition: color 0.5s ease;
     }
     .selection a::before{
         content: "";
@@ -42,23 +47,17 @@
         position: absolute;
         bottom: 0;
     }
-    .selection{
-        display: flex;
-        gap: 50px;
-        font-weight: 600;
-    }
     .selection a:hover::before{
         width: 100%;
     }
-    .home{
-        transition: transform 0.5s ease;
-    }
-    .header-selection .home a{
+    .home a{
+        color: #fff;
         font-weight: bolder;
-        font-size: 40px;
+        font-size: 35px;
+        text-decoration: none;
         transition: transform 0.5s ease;
     }
-    .header-selection .home a:hover{ 
+    .home a:hover{ 
         transform: scale(1.1);
     }
     .bg-img{
