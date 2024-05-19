@@ -14,23 +14,19 @@ function toggleNav() {
 // Page switch
 const images = [
     //new image put in here
-    "./imgFAW/beReal.jpg",
-    "./imgFAW/beach.jpg",
-    "./imgFAW/jobs.jpg",
-    "./imgFAW/shave.jpg",
-    "./imgFAW/birthday.jpg",
-    "./imgFAW/broodMother.jpg",
-    "./imgFAW/mySkyKid.jpg",
-    "./imgFAW/skyGA2.jpg",
-    "./imgFAW/skyGA1.jpg",
-    "./imgFAW/skyTogether2.jpg",
-    "./imgFAW/skyTogether1.jpg",
-    "./imgFAW/hairCut.jpg",
-    "./imgFAW/Gaffie.jpg",
-    "./imgFAW/roadToRostok.jpg",
-    "./imgFAW/commission.jpg",
-    "./imgFAW/commission2.jpg",
-    "./imgFAW/dingo.jpg"
+    "./imgNSFW/13.jpg",
+    "./imgNSFW/11.jpg",
+    "./imgNSFW/12.jpg",
+    "./imgNSFW/9.jpg",
+    "./imgNSFW/10.jpg",
+    "./imgNSFW/8.jpg",
+    "./imgNSFW/7.jpg",
+    "./imgNSFW/6.jpg",
+    "./imgNSFW/5.jpg",
+    "./imgNSFW/4.jpg",
+    "./imgNSFW/3.jpg",
+    "./imgNSFW/2.jpg",
+    "./imgNSFW/1.jpg",
     //old image put here
 ];
 
@@ -80,11 +76,3 @@ document.getElementById("pageNumberInput").addEventListener("change", function()
 });
 
 showPage(currentPage);
-
-function confirmButton(url){
-    event.preventDefault();
-    const userConfirm = confirm("This site contains content over 18 years old! Please consider before watching!");
-    if (userConfirm){
-        window.location.href = url;
-    }
-}
