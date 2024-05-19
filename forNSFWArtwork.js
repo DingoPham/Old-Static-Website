@@ -24,7 +24,11 @@ const images = [
     "./imgNSFW/6.jpg",
     "./imgNSFW/5.jpg",
     "./imgNSFW/4.jpg",
+    "./imgNSFW/3.1.jpg",
     "./imgNSFW/3.jpg",
+    "./imgNSFW/2.3.jpg",
+    "./imgNSFW/2.2.jpg",
+    "./imgNSFW/2.1.jpg",
     "./imgNSFW/2.jpg",
     "./imgNSFW/1.jpg",
     //old image put here
