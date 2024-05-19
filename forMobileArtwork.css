@@ -120,6 +120,11 @@
     .img-place img{
         width: 300px;
         height: 300px;
+        border-radius: 20px;
+        transition: transform 0.5s;
+    }
+    .img-place img:hover{
+        transform: scale(1.1);
     }
     .page-number input{
         width: 25px;
