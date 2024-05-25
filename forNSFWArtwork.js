@@ -14,6 +14,7 @@ function toggleNav() {
 // Page switch
 const images = [
     //new image put in here
+    "./imgNSFW/14.jpg",
     "./imgNSFW/13.jpg",
     "./imgNSFW/11.jpg",
     "./imgNSFW/12.jpg",
