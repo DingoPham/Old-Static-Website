@@ -292,9 +292,28 @@
         --text-color: #fff;
     }
         /*------------------Dark/Light icon--------------------*/
+    .theme-switcher-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
     .theme-switcher-slide{
+        display: flex;
+        justify-content: space-around;
         height: 30px;
-        width: 100%;
-        
+        width: 60px;
+        border-radius: 30px;
+        transition: opacity 0.5s ease;
+        background-color: #ffffff;
+    }
+    .theme-switcher-slide img{
+        width: 20px;
+    }
+    .theme-switcher-slide img:last-child{
+        width: 20px;
+    }
+    .hidden{
+        display: none !important;
     }
 }
