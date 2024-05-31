@@ -85,3 +85,21 @@ hiddenNavBtn.addEventListener("click", function(){
 overlay.addEventListener("click", function(){
     overlay.style.display = "none";
 });
+
+// Light/Dark theme
+document.getElementById('themeSwitcher').addEventListener('click', function(){
+    document.body.classList.toggle('dark-theme');
+
+    if(document.body.classList.contains('dark-theme')){
+        localStorage.setItem('theme', 'dark');
+    }
+    else{
+        localStorage.setItem('theme', 'light');
+    }
+});
+document.addEventListener('DOMContentLoaded', (event) => {
+    const savedTheme = localStorage.getItem('theme');
+    if(savedTheme && savedTheme === 'dark'){
+        document.body.classList.add('dark-theme');
+    }
+});
