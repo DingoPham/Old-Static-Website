@@ -1,9 +1,11 @@
 @media only screen and (max-width: 768px) {
     body {
-        background-color: #282828;
+        background-color: var(--background-color);
+        color: var(--text-color);
         width: 100%;
         font-family: "Quicksand", cursive;
         margin: 0;
+        transition: background-color 0.3s, color 0.3s;
     }
     /*-----------------------------*/
     .header{
@@ -48,14 +50,23 @@
         display: block;
         transition: 0.2s;
     }
-    .sidebar div {
+    .nsfw-art{
         padding: 10px 15px;
         text-decoration: none;
         font-size: 25px;
         color: #818181;
         display: block;
         transition: 0.2s;
-        cursor: pointer;
+    }
+    .sidebar .theme-switcher-main {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.2s;
     }
     .sidebar a:hover {
         color: #f1f1f1;
@@ -68,8 +79,6 @@
     }
     .left-navbar-button {
         display: inline-block;
-        cursor: pointer;
-        color: white;
         position: fixed;
         top: 1%;
         left: 1%;
@@ -78,7 +87,7 @@
     .bar1, .bar2, .bar3 {
         width: 25px;
         height: 2px;
-        background-color: #ffffff;
+        background-color: #8d8d8d;
         margin: 6px 0;
         transition: 0.4s;
     }
@@ -121,10 +130,6 @@
         width: 300px;
         height: 300px;
         border-radius: 20px;
-        transition: transform 0.5s;
-    }
-    .img-place img:hover{
-        transform: scale(1.1);
     }
     .page-number input{
         width: 25px;
@@ -163,6 +168,37 @@
     }
     .selection a img:hover{
         transform: scale(1.4);
+    }
+    /*------------------Dark/Light--------------------*/
+    :root{
+        --background-color: #fff;
+        --text-color: #000;
+    }
+    body.dark-theme {
+        --background-color: #282828;
+        --text-color: #fff;
+    }
+    /*------------------Dark/Light icon--------------------*/
+    .theme-switcher-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .theme-switcher-slide{
+        display: flex;
+        justify-content: space-around;
+        height: 30px;
+        width: 60px;
+        border-radius: 30px;
+        transition: opacity 0.5s ease;
+        background-color: #ffffff;
+    }
+    .theme-switcher-slide img{
+        width: 20px;
+    }
+    .hidden{
+        display: none !important;
     }
     /*-----------------------------*/
 }

@@ -21,7 +21,14 @@
                         <a href="https://www.youtube.com/channel/UCtH0_zKVeXOKO2hiqLoHSrg"> Follow my Youtube!</a>
                         <a href="https://buymeacoffee.com/dingopham763/membership"> Buy me a coffee!</a>
                         <p>-More-</p>
-                        <div onclick="confirmButton('./artworkNSFW.html')">NSFW Artwork</div>
+                        <div class="nsfw-art" onclick="confirmButton('./artworkNSFW.html')">NSFW Artwork</div>
+                        <p>-Theme-</p>
+                        <div id="themeSwitcher" class="theme-switcher-main">
+                            <div class="theme-switcher-slide">
+                                <img src="./img/sun.svg" id="sunTheme">               
+                                <img src="./img/moon.svg" id="moonTheme" class="hidden">
+                            </div>
+                        </div>
                     </div>
                     <div class="content" id="content">
                         <div class="left-navbar-button" onclick="toggleNav()">

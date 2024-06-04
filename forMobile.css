@@ -1,21 +1,25 @@
 @media only screen and (max-width: 768px) {
-    /*-----------------------------*/
+    /*--------------For mobile screen---------------*/
     body{
+        background-color: var(--background-color);
+        color: var(--text-color);
         width: 100%;
         font-family: "Quicksand", cursive;
         margin: 0;
-        background-color: #fff;
+        transition: background-color 0.3s, color 0.3s;
     }
-    /*-----------------------------*/
+    /*--------------body---------------*/
     .selection{
         display: none;
     }
     .mobile-selection{
-        display: block;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 20px;
     }
     .hidden-navbar-button{
         display: inline-block;
-        margin-top: 7px;
     }
     .bar1, .bar2, .bar3 {
         width: 30px;
@@ -31,7 +35,7 @@
         position: fixed;
         top: 71px;
         right: 0;
-        box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 30px 40px hsla(0, 0%, 0%, 0.502);
     }
     .hidden-navbar a{
         display: flex;
@@ -48,7 +52,7 @@
         top: 0;
         left: 0;
         z-index: 999;
-        background-color: #44b44d;
+        background-color: #363636;
         font-size: 30px;
         width: 100%;
     }
@@ -72,8 +76,9 @@
     .bg-img{
         background-image: url(./img/skyBG.jpg);
         background-size: cover;
+        background-position: center;
         width: 100%;
-        height: 400px;
+        height: 270px;
         margin-top: 70px;
         margin-bottom: 10em;
     }
@@ -182,10 +187,10 @@
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        border: 1px solid #a4b833;
+        border: 1px solid #777777;
         border-radius: 3px;
         color: #fff;
-        background-color: #44b44d;
+        background-color: #363636;
         width: 200px;
         height: 50px;
         transition: transform 0.5s ease;
@@ -198,7 +203,7 @@
         width: 100%;
         height: 400px;
         margin: 0;
-        background-color: #44b44d;
+        background-color: #363636;
         color: #fff;
         display: flex;
         text-align: center;
@@ -249,5 +254,34 @@
     .left-animated-content.show {
         opacity: 1;
         transform: translateX(0);
+    }
+    /*------------------Dark/Light--------------------*/
+    :root{
+        --background-color: #fff;
+        --text-color: #000;
+    }
+    body.dark-theme {
+        --background-color: #282828;
+        --text-color: #fff;
+    }
+    /*------------------Dark/Light icon--------------------*/
+    .theme-switcher-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .theme-switcher-slide{
+        display: flex;
+        justify-content: space-around;
+        height: 30px;
+        width: 40px;
+        border-radius: 30px;
+        background-color: #ffffff;
+    }
+    .theme-switcher-slide img{
+        width: 20px;
+    }
+    .hidden{
+        display: none !important;
     }
 }

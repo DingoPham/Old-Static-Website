@@ -291,7 +291,7 @@
         --background-color: #282828;
         --text-color: #fff;
     }
-        /*------------------Dark/Light icon--------------------*/
+    /*------------------Dark/Light icon--------------------*/
     .theme-switcher-main{
         display: flex;
         flex-direction: column;
@@ -304,13 +304,9 @@
         height: 30px;
         width: 60px;
         border-radius: 30px;
-        transition: opacity 0.5s ease;
         background-color: #ffffff;
     }
     .theme-switcher-slide img{
-        width: 20px;
-    }
-    .theme-switcher-slide img:last-child{
         width: 20px;
     }
     .hidden{
