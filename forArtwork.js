@@ -14,6 +14,7 @@ function toggleNav() {
 // Page switch
 const images = [
     //new image put in here
+    "./imgFAW/LuverSummer.jpg",
     "./imgFAW/beReal.jpg",
     "./imgFAW/beach.jpg",
     "./imgFAW/jobs.jpg",
