@@ -14,24 +14,24 @@ function toggleNav() {
 // Page switch
 const images = [
     //new image put in here
-    "./imgFAW/LuverSummer.jpg",
-    "./imgFAW/beReal.jpg",
-    "./imgFAW/beach.jpg",
-    "./imgFAW/jobs.jpg",
-    "./imgFAW/shave.jpg",
-    "./imgFAW/birthday.jpg",
-    "./imgFAW/broodMother.jpg",
-    "./imgFAW/mySkyKid.jpg",
-    "./imgFAW/skyGA2.jpg",
-    "./imgFAW/skyGA1.jpg",
-    "./imgFAW/skyTogether2.jpg",
-    "./imgFAW/skyTogether1.jpg",
-    "./imgFAW/hairCut.jpg",
-    "./imgFAW/Gaffie.jpg",
-    "./imgFAW/roadToRostok.jpg",
-    "./imgFAW/commission.jpg",
-    "./imgFAW/commission2.jpg",
-    "./imgFAW/dingo.jpg"
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731012/LuverSummer_lu2zbu.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731014/beReal_cqgat8.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731013/beach_o32ttt.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731010/jobs_kvhpbj.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731013/shave_htlgxp.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731015/birthday_duij44.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731010/broodMother_xftfbj.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731011/mySkyKid_p5mnfv.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731013/skyGA2_pgimog.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731012/skyGA1_jwhpsj.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731021/skyTogether2_ivjssc.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731015/skyTogether1_tgwnzc.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731019/hairCut_pmk8ml.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731010/Gaffie_ydw0zs.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731014/roadToRostok_vw7tet.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731009/commission_cqckpo.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731010/commission2_cvltlg.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731010/dingo_xxdoj9.jpg"
     //old image put here
 ];
 

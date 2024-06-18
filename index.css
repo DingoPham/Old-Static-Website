@@ -63,7 +63,7 @@
         transform: scale(1.1);
     }
     .bg-img{
-        background-image: url(./img/skyBG.jpg);
+        background-image: url(https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718735895/skyBG_ajbji9.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;

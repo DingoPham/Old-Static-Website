@@ -74,7 +74,7 @@
         font-weight: 700;
     }
     .bg-img{
-        background-image: url(./img/skyBG.jpg);
+        background-image: url(https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718735895/skyBG_ajbji9.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -104,6 +104,7 @@
     .about-block .about-img img{
         width: 300px;
         height: 200px;
+        border-radius: 4%
     }
     /*-----------------------------*/
     .my-skills-text{
@@ -142,6 +143,7 @@
     .my-skills-block .my-skills-img img{
         width: 300px;
         height: 200px;
+        border-radius: 4%
     }
     .checked{
         color: orange;
