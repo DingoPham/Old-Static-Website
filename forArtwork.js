@@ -19,6 +19,8 @@ const images = [
     "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731013/beach_o32ttt.jpg",
     "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731010/jobs_kvhpbj.jpg",
     "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731013/shave_htlgxp.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718782954/Luver_rp2by5.jpg",
+    "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718782932/Itsumi_x_Opheebop_funi1u.jpg",
     "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731015/birthday_duij44.jpg",
     "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731010/broodMother_xftfbj.jpg",
     "https://res.cloudinary.com/dtqyzzv0h/image/upload/v1718731011/mySkyKid_p5mnfv.jpg",
