@@ -200,5 +200,38 @@
     .hidden{
         display: none !important;
     }
+    /*------------------One-click zoom--------------------*/
+    .image-zoom{
+        display: none; /* Ẩn mặc định */
+        position: fixed; /* Định vị hộp thoại */
+        z-index: 1; /* Đặt trên các phần tử khác */
+        left: 0;
+        top: 0;
+        width: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.575);
+    }
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .close:hover, .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .image-content{
+        margin: auto;
+        display: flex;
+        width: 80%;
+        height: 100vh;
+        justify-content: center;
+    }
     /*-----------------------------*/
 }

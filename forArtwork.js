@@ -56,6 +56,33 @@ function showPage(page) {
         imgPlace.appendChild(img);
         pageContent.appendChild(imgPlace);
     });
+
+    attachClickEventToImages();
+}
+
+function attachClickEventToImages(){
+    // One-click zoom 
+    var imageZoom = document.getElementById('imageZoom');
+    var fullImage = document.getElementById('fullImage');
+    var close = document.querySelector('.close');
+    var originImages = document.querySelectorAll('.img-place img');
+
+    originImages.forEach(function(originImage){
+        originImage.addEventListener('click', function(){
+            imageZoom.style.display = 'block';
+            fullImage.src = this.src;
+        });
+    });
+
+    close.addEventListener('click', function(){
+        imageZoom.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event){
+        if(event.target == imageZoom){
+            imageZoom.style.display = 'none';
+        }
+    });
 }
 
 function showPreviousPage() {
